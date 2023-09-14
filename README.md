@@ -4,4 +4,5 @@
 
 技术交流，bug反馈，获取最新项目等请加下方微信：
 
-![e98acd80fd7d73a59b567ef31a1d2b4f](https://github.com/ziansec/Snake/assets/81213597/3b15a90d-1f5b-4490-bedd-311fd91969d5)
+![图片](https://github.com/ziansec/Snake/assets/81213597/4b2d4c88-1bc6-4e31-8e1a-1240fe46edff)
+
