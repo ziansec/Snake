@@ -4,9 +4,10 @@
 
 ![图片](https://github.com/ziansec/Snake/assets/81213597/714db7cd-bdf1-462e-9af8-b96369e2b83c)
 
-通过断链让其父进程为本身
+通过断链让其父进程更改
 
-![图片](https://github.com/ziansec/Snake/assets/81213597/770c7375-5d22-4770-b60c-a13ebf7ff6a7)
+![图片](https://github.com/ziansec/Snake/assets/81213597/acc7e37d-3ab5-43d2-9355-7e2cee3b1429)
+
 
 # 用法
 
