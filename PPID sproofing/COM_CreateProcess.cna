@@ -1,0 +1,30 @@
+beacon_command_register("COM_CreateProcess","The com interface is used to implement the disconnection start process",
+    "Synopsis: The com interface is used to implement the disconnection start process\n\n" .
+    "Use 'COM_CreateProcess' to CreateProcess\n"
+);
+
+
+
+alias COM_CreateProcess {
+    local('$barch $handle $data $args');
+	$barch  = barch($1);
+	
+	if(size(@_) != 2)
+	{
+		berror($1, "Incorrect usage!");
+        berror($1, beacon_command_detail("COM_CreateProcess"));
+		return;
+	}
+	
+	$handle = openf(script_resource("COM_Process. $+ $barch $+ .o"));
+	
+	$data   = readb($handle, -1);
+	closef($handle);
+
+	$args   = bof_pack($1, "Z", $2);
+	
+	btask($1, "Running doppid BOF@Memory");
+
+	beacon_inline_execute($1, $data, "go", $args);
+}
+
